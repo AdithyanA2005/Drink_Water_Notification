@@ -1,8 +1,15 @@
 # IMPORTS
 import time  # We are importing the time module to get the time
-from plyer import notification
-import random
-if __name__ == "__main__":
+
+from plyer import notification  # We are importing the plyer module to show the notification
+
+import random  # We are using Random to show a random message about water in our program
+
+
+
+if __name__ == "__main__": 
+	
+	# We are creating a dictionary to store the different messages of the notification
 	dictMessage =[
 
 	"Water lubricates the body joints",
@@ -43,12 +50,27 @@ if __name__ == "__main__":
 	
 	]
 
+	# To chose a random item we will create a random number and print the message in the dictionary at that index point
 	choices = random.randint(0, 17)
 
+
+	# START    notification code starts here
+
+	# Uncomment the below and the last line to run this code on a interval of 1hr
 	# while True:
+
+	# Using this fuction the notiication will pop up
 	notification.notify(
+
+		# This is the title of the notification
 		title = "Please drink Water",
+
+		# This is the random message in the notification
 		message = dictMessage[choices],
+
+		# This is how much time the popup should last
 		timeout = 10
 	)
+
+		# Uncomment this to make the program wait for 1hr before the next popup
 		# time.sleep(60*60)
