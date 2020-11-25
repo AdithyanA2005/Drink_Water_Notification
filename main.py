@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
 	"Water will also help in control of calories",
 	
-	"Water helps in mataining a regularity in digetion",
+	"Water helps in maintaining a regularity in digestion",
 
 	"Water improves your Concentration Level",
 
@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
 	"Water is the house of life and it is good for us",
 
-	"Water is precious so dont waste it"
+	"Water is precious so don't waste it"
 	
 	]
 
@@ -59,8 +59,11 @@ if __name__ == "__main__":
 	# Uncomment the below and the last line to run this code on a interval of 1hr
 	# while True:
 
-	# Using this fuction the notiication will pop up
+	# Using this function the notification will pop up
 	notification.notify(
+
+		# This is the name of the App
+		app_name = "Water-Notifier",
 
 		# This is the title of the notification
 		title = "Please drink Water",
@@ -68,9 +71,10 @@ if __name__ == "__main__":
 		# This is the random message in the notification
 		message = dictMessage[choices],
 
-		# This is how much time the popup should last
+		# This is how much time the pop-up should last
 		timeout = 10
+
 	)
 
-		# Uncomment this to make the program wait for 1hr before the next popup
+		# Uncomment this to make the program wait for 1hr before the next pop-up
 		# time.sleep(60*60)
